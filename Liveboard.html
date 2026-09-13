@@ -5,10 +5,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#FF5A00">
-<link rel="icon" type="image/jpeg" href="images.jpg">
-<link rel="apple-touch-icon" href="images.jpg">
+<link rel="icon" type="image/jpeg" href="page-icon.jpg">
+<link rel="apple-touch-icon" href="page-icon.jpg">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<title>Final Check Team — Updates Board</title>
+<title>Live Board</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -341,8 +341,8 @@ body{font-size:15px;line-height:1.5;}
   <div class="brand">
     <img class="brand-logo" src="talabat-logo.png" alt="talabat">
     <div class="team-info">
-      <div class="team-name">Final Check Team</div>
-      <div class="team-sub">Updates Board</div>
+      <div class="team-name">Live Board</div>
+      <div class="team-sub">Live Board</div>
     </div>
   </div>
   <div class="topbar-btns">
@@ -1167,7 +1167,7 @@ function notifyNewUpdate(u){
   const text=String(u.msg||'').replace(/\s+/g,' ').trim();
   const n=new Notification('New team update',{
     body:`${u.name||'A teammate'}: ${text.slice(0,140)}${text.length>140?'…':''}`,
-    icon:'images.jpg',
+    icon:'page-icon.jpg',
     tag:`update-${u.id}`
   });
   n.onclick=()=>{window.focus();n.close();};
@@ -1225,7 +1225,7 @@ function exportPDF(){
   const win=window.open('','_blank');
   if(!win){toast('Please allow pop-ups for exports, then try again.');return;}
   win.document.write(`<!DOCTYPE html><html><head><meta charset="UTF-8">
-  <title>Final Check — Updates Board</title>
+  <title>Live Board</title>
   <style>
     *{margin:0;padding:0;box-sizing:border-box;}
     body{font-family:Arial,sans-serif;font-size:13px;color:#1A1816;background:#fff;padding:32px;}
@@ -1251,7 +1251,7 @@ function exportPDF(){
   <div class="header">
     <div class="header-brand">
       <div class="header-logo">talabat</div>
-      <div><div style="font-size:13px;font-weight:600;">Final Check Team</div><div class="header-sub">Updates Board Export</div></div>
+      <div><div style="font-size:13px;font-weight:600;">Live Board</div><div class="header-sub">Live Board Export</div></div>
     </div>
     <div class="header-date">Exported: ${date}</div>
   </div>
@@ -1314,8 +1314,8 @@ function exportDOC(){
   .card-meta{font-size:9pt;color:#9C9890;border-top:1pt solid #E5E2DB;padding-top:6pt;margin-top:8pt;}
   .author{font-weight:bold;color:#58554F;}
 </style></head><body>
-<h1>talabat — Final Check Team</h1>
-<h2>Updates Board Export &nbsp;·&nbsp; ${date}</h2>
+<h1>talabat — Live Board</h1>
+<h2>Live Board Export &nbsp;·&nbsp; ${date}</h2>
 <table class="stats"><tr>
   <td><b style="font-size:16pt;color:#FF5A00;">${updates.length}</b><br><span style="font-size:8pt;color:#888;">TOTAL UPDATES</span></td>
   <td width="12pt"></td>
