@@ -33,7 +33,7 @@
 body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);font-size:13px;min-height:100vh;display:flex;flex-direction:column;}
 
 /* ── TOPBAR ── */
-.topbar{height:50px;background:linear-gradient(115deg,#FF5A00,#FF6A00,#F45112,#FF5A00);background-size:260% 260%;animation:headerGlow 14s ease-in-out infinite;display:flex;align-items:center;justify-content:space-between;padding:0 18px;flex-shrink:0;position:relative;overflow:visible;}
+.topbar{height:50px;background:linear-gradient(115deg,#D71920,#E21F2F,#B5121B,#D71920);background-size:260% 260%;animation:headerGlow 14s ease-in-out infinite;display:flex;align-items:center;justify-content:space-between;padding:0 18px;flex-shrink:0;position:relative;overflow:visible;}
 @keyframes headerGlow{0%,100%{background-position:0% 50%;}50%{background-position:100% 50%;}}
 .topbar::after{content:'';position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at 50% -80%,rgba(255,255,255,.22),transparent 55%);opacity:.65;}
 .topbar>*{position:relative;z-index:1;}
@@ -42,7 +42,7 @@ body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);font-
 
 
 .team-info{border-left:1px solid rgba(255,255,255,0.3);padding-left:10px;display:flex;flex-direction:column;}
-.team-name{font-size:12px;font-weight:600;color:#fff;line-height:1.3;}
+.team-name{font-size:12px;font-weight:700;color:#fff;line-height:1.3;}
 .team-sub{font-size:9px;color:rgba(255,255,255,0.65);text-transform:uppercase;letter-spacing:0.07em;}
 .topbar-btns{display:flex;gap:6px;}
 .top-btn{display:flex;align-items:center;gap:5px;padding:6px 12px;border-radius:6px;border:1px solid rgba(255,255,255,0.35);background:rgba(255,255,255,0.12);color:#fff;font-size:12px;font-weight:500;cursor:pointer;transition:background 0.15s;}
@@ -342,7 +342,6 @@ body{font-size:15px;line-height:1.5;}
     <img class="brand-logo" src="talabat-logo.png" alt="talabat">
     <div class="team-info">
       <div class="team-name">Live Board</div>
-      <div class="team-sub">Live Board</div>
     </div>
   </div>
   <div class="topbar-btns">
